@@ -181,7 +181,7 @@ export class DwrMcpServer {
         });
     }
 
-    private async handleApiCall(endpoint: string, params: any) {
+    public async handleApiCall(endpoint: string, params: any) {
         const url = `${BASE_URL}/${endpoint}`;
         const headers: Record<string, string> = {};
         if (this.apiKey) {
